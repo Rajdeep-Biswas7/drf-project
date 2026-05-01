@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-7k)zmeb9_#6xc(%&$$wyx9gfd1@s_k6tvd(k38i415p@pau*vh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG =False,
 
 ALLOWED_HOSTS = []
 
@@ -37,9 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-   'students',
-   'rest_framework',
-   'api',
+    #'rest_framework',
+    'students',
+    'api',
+    
 ]
 
 MIDDLEWARE = [

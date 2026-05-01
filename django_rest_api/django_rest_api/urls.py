@@ -18,10 +18,14 @@ from django.contrib import admin
 from django.urls import path
 from django.urls import include
 
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path("admin/", admin.site.urls),
     path('students/', include('students.urls'))
 ]
 #api endpoint: http://localhost:8000/students/
 
+urlpatterns = [
 path('api/v1/', include('api.urls')),
+]
+
