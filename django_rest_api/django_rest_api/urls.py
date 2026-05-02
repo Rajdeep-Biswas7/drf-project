@@ -21,11 +21,10 @@ from django.urls import include
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('students/', include('students.urls'))
+    path('students/', include('students.urls')),
+    path('api/v1/', include('api.urls')),
 ]
-#api endpoint: http://localhost:8000/students/
-
-urlpatterns = [
-path('api/v1/', include('api.urls')),
-]
+# API endpoints:
+#   http://localhost:8000/api/v1/students/   <- REST Framework
+#   http://localhost:8000/students/          <- students app
 
